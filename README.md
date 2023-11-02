@@ -34,5 +34,5 @@ past_key_values=self.prefixEncoder(prefix_tokens)
 
 ## 使用说明
 
-把模型.py替换掉huggingface 里的模型.py
+把目录/ptune-deep/模型.py 替换掉huggingface 里的 模型.py
 
