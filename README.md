@@ -2,7 +2,8 @@
 baichuan p-tune v2 fine tune
 
 
-``class PrefixEncoder(torch.nn.Module):
+``
+class PrefixEncoder(torch.nn.Module):
 
     def __init__(self, config):
         super().__init__()
