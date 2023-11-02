@@ -1,5 +1,6 @@
 # baichuan-ptune-deepPrompt
-baichuan p-tune v2 fine tune
+
+# baichuan模型 p-tune v2 fine tune
 
 ## 增加内容：
 
