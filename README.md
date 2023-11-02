@@ -26,3 +26,8 @@ prefix_tokens = self.prefixToken.unsqueeze(0).expand(input_ids.shape[0], -1)
 
 past_key_values=self.prefixEncoder(prefix_tokens)
 ```
+
+## 使用说明
+
+把模型.py替换掉huggingface 里的模型.py
+
