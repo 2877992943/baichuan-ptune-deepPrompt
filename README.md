@@ -37,5 +37,9 @@ past_key_values=self.prefixEncoder(prefix_tokens)
 把目录/ptune-deep/模型.py 替换掉huggingface 里的 模型.py
 
 ## 参考论文
-```P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks```
+
+P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks
+
+## model
+https://huggingface.co/baichuan-inc/Baichuan-7B
 
