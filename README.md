@@ -20,7 +20,7 @@ class PrefixEncoder(torch.nn.Module):
 ```
 
 
-### 在BaiChuanForCausalLM的forward中 将past_key_values替换成deep prompt
+### 在BaiChuanForCausalLM的forward中 将past_key_values替换成deep prompt，然后对attention_fn等进行相应修改
 ```
 prefix_tokens = self.prefixToken.unsqueeze(0).expand(input_ids.shape[0], -1)
 
