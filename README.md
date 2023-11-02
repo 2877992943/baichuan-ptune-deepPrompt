@@ -1,6 +1,7 @@
 # baichuan-ptune-deepPrompt
 baichuan p-tune v2 fine tune
 
+## 增加内容：
 
 ```
 class PrefixEncoder(torch.nn.Module):
@@ -16,4 +17,12 @@ class PrefixEncoder(torch.nn.Module):
         past_key_values=past_key_values.view(2,self.cfg.num_hidden_layers ,batch,self.cfg.num_attention_heads,seq,self.cfg.hidden_size//self.cfg.num_attention_heads)
         return past_key_values  #[2,layer,batch,head,seq,dim]
         
+```
+
+
+## 将past_key_values替换成deep prompt
+```
+prefix_tokens = self.prefixToken.unsqueeze(0).expand(input_ids.shape[0], -1)
+
+past_key_values=self.prefixEncoder(prefix_tokens)
 ```
