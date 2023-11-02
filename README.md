@@ -13,4 +13,6 @@ baichuan p-tune v2 fine tune
         batch,seq=prefix.shape
         past_key_values = self.embedding(prefix)
         past_key_values=past_key_values.view(2,self.cfg.num_hidden_layers ,batch,self.cfg.num_attention_heads,seq,self.cfg.hidden_size//self.cfg.num_attention_heads)
-        return past_key_values  #[2,layer,batch,head,seq,dim]``
+        return past_key_values  #[2,layer,batch,head,seq,dim]
+        
+``
